@@ -1,0 +1,173 @@
+.orange-color{
+  background-color: #FF5421;
+  border: 0px;
+}
+.orange{
+  background-color: #FF5421;
+  border: 0px;
+  color: black;
+}
+.heading-color{
+  color: #FF5421;
+}
+.dark-blue{
+  background-color: #171F32;
+}
+
+.button {
+  --bg-color: #FF5421; /* Original background color */
+  --text-color: #ffffff; /* Original text color */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: white;
+  color: #FF5421;
+}
+
+.background-image {
+  display: block;
+}
+
+.overlay-image {
+  position: absolute;
+  width: 15%;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay-text {
+  position: absolute;
+  width: 25%;
+  top: 57%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.bg-color{
+  background-color: black;
+}
+/* .container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+} */
+
+.image-c {
+  position: relative;
+  /* width: 300px; */
+  /* height: 200px; */
+  overflow: hidden;
+  /* border-radius: 10px; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  transition: transform 0.3s;
+}
+
+.image-c img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s;
+}
+
+
+.image-c:hover img {
+  filter: blur(5px);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(173, 216, 230, 0.8); /* Light blue background with opacity */
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.image-c:hover .overlay {
+  opacity: 1;
+}
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.top-left-caption {
+  position: absolute;
+  top: 155px;
+  left: 60px;
+  padding: 10px;
+  /* background-color: rgba(255, 255, 255, 0.7); Optional: Add a background to make the text more readable */
+}
+
+.animated-caption {
+  opacity: 0;
+  transform: translateX(-100%); /* Start position off-screen to the left */
+  animation: slideIn 1s forwards;
+  animation-delay: 0.2s; /* Delay the start of the animation by 2 seconds */
+}
+
+@keyframes slideIn {
+  to {
+      opacity: 1;
+      transform: translateX(0); /* End position on-screen */
+  }
+}
+@media only screen and (max-width: 600px) {
+  .top-left-caption {
+    top: 0% !important ;
+    font-size: 14px;
+  }
+  .top-left-caption h1, .top-left-caption p {
+    font-size: 14px !important;
+  }
+  
+}
