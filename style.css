@@ -131,6 +131,14 @@
   opacity: 0;
   transition: opacity 0.3s;
 }
+.move-left{
+  position: relative;
+  left: 63%;
+}
+
+.footer-size{
+  padding: 0px;
+}
 
 .image-c:hover .overlay {
   opacity: 1;
@@ -169,5 +177,14 @@
   .top-left-caption h1, .top-left-caption p {
     font-size: 14px !important;
   }
-  
+  .mobile{
+    float: right;
+    margin: 8px 15px 0px 0px;
+  }
+  .mobile-text{
+    font-size: 14px;
+  }
+  .overlay-text {
+    left: 40%;
+  }
 }
